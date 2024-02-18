@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block main %}
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/app.css') }}"/>
+</head>
+<body>
+<div class="con">
+        <div class="heading">
+            <img src="{{ url_for('static', filename='profilepic.jpg') }}" alt="dog">
+                <h1>Mia Hill</h1>
+                <p>@mhill <br> Kingston,Jamaica <br> Joined {{info}} </p>
+        </div>
+        <div class="para">
+            <p>I am a dynamic and skilled young professional with a passion for crafting engaging and functional websites. If you're interested in collaborating on an exciting new project, feel free to reach out. I'm eager to contribute my expertise to bring innovative web designs to life. Let's connect and explore the possibilities of working together on something extraordinary!</p>
+        </div>
+        <div class="stats">
+            <p><span class ="num"> 60 </span><br><span class ="words"> Posts</span></p>
+            <p><span class ="num">10 </span><br> <span class ="words">Following</span></p>
+            <p><span class ="num">2500 </span><br><span class ="words"> Followers</span></p>
+        </div>
+        <div class="btn">
+            <button>Follow</button>
+        </div>
+</div>
+</body>
+{% endblock %}
